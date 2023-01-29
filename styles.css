@@ -1,0 +1,83 @@
+body, 
+html { 
+    /* must include line below */
+    height: 100%;
+    background: url(images/jono-hirst-9Vnxo0cCR3Q-unsplash.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+.is-banner {
+    margin: 2rem 0;
+}
+
+h1 {
+    font-family: 'Damion', cursive;
+    font-size: 4.25rem;
+    line-height: 1.5;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 3rem;
+    line-height: 1.25;
+}
+
+.txt-big {
+    font-size: 5rem;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+.btn {
+    font-weight: 400;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+/* instead of putting all styles into element we focus on doing 1 thing */
+.btn-xl {
+    padding: 1% 2.5%;
+    margin: 1rem 0;
+    max-width: 30%;
+    box-shadow: 1px -2px 5px lightcoral;
+    transition: transform 250ms;
+}
+
+.btn-xl:hover {
+    transform: scale(1.05);
+}
+
+/* isn't great on sizes below 400 but will improve in the near future */
+@media only screen and (max-width: 800){
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.25rem;
+    }
+    
+    .txt-big {
+        font-size: 2.25rem;
+    }
+    
+    p {
+        font-size: 0.75rem;
+    }
+
+    .btn-xl {
+        max-width: 100%;
+    }
+}
